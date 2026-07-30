@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twitch Chat Promo Cleaner</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header class="header">
+        <img class="logo" src="icons/icon48.png" alt="" width="36" height="36" />
+        <div>
+          <h1>Chat Promo Cleaner</h1>
+          <p class="subtitle">Limpia banners encima del chat de Twitch</p>
+        </div>
+      </header>
+
+      <label class="toggle-row" for="toggle">
+        <div class="toggle-copy">
+          <span class="toggle-title">Eliminar promos del chat</span>
+          <span id="statusText" class="toggle-status">Activado</span>
+        </div>
+        <input id="toggle" type="checkbox" role="switch" checked />
+        <span class="switch" aria-hidden="true"></span>
+      </label>
+
+      <p class="hint">
+        Oculta los banners promocionales (channel skins, bonus de subs, etc.)
+        que aparecen encima del chat. Recarga la pestaña de Twitch si no ves el
+        cambio de inmediato.
+      </p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

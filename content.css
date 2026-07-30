@@ -1,0 +1,19 @@
+/* Hidden when the extension toggle is enabled */
+html.tcpc-enabled [data-test-selector="channel-skins-shared-above-chat-v3"],
+html.tcpc-enabled [data-test-selector="channel-skins-above-chat"],
+html.tcpc-enabled [data-a-target="channel-skins-shared-above-chat"],
+html.tcpc-enabled [data-a-target="channel-skins-above-chat"],
+html.tcpc-enabled .channel-skins-shared-above-chat,
+html.tcpc-enabled .channel-skins-above-chat,
+html.tcpc-enabled [class*="ChannelSkinsSharedAboveChat"],
+html.tcpc-enabled [class*="channel-skins-shared-above-chat"] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  pointer-events: none !important;
+}
