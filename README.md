@@ -17,6 +17,7 @@
 
 <p align="center">
   🌐 Sitio / assets: <a href="https://github.com/zLeGnDz3r0/chatpromocleaner">chatpromocleaner</a> (privado)<br/>
+  📦 Este repo es <strong>público</strong> — la landing enlaza aquí<br/>
   🏪 Chrome Web Store — próximamente
 </p>
 
