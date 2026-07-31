@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Twitch Chat Promo Cleaner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Elimina los banners y promociones que aparecen encima del chat de Twitch para una lectura más limpia.",
   "permissions": ["storage"],
   "host_permissions": ["*://*.twitch.tv/*"],

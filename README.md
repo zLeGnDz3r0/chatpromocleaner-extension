@@ -11,7 +11,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Chrome-MV3-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome MV3" />
-  <img src="https://img.shields.io/badge/version-1.0.0-3EE0C5?style=for-the-badge" alt="v1.0.0" />
+  <img src="https://img.shields.io/badge/version-1.0.1-9146FF?style=for-the-badge" alt="v1.0.1" />
   <img src="https://img.shields.io/badge/Gratis-100%25-success?style=for-the-badge" alt="Gratis" />
 </p>
 
@@ -61,7 +61,9 @@ Ver [PRIVACY.md](./PRIVACY.md). Solo se guarda un booleano (toggle). Sin cuentas
 
 ## Empaquetado Chrome Web Store
 
-Usa `chatpromocleaner-extension-v1.0.0.zip` o genera uno nuevo comprimiendo el contenido de esta carpeta (con `manifest.json` en la raíz del zip).
+Usa `chatpromocleaner-extension-v1.0.1.zip` o genera uno nuevo comprimiendo el contenido de esta carpeta (con `manifest.json` en la raíz del zip).
+
+En pestañas de Twitch, el icono muestra un punto **verde** (limpieza activa) o **rojo** (desactivada). En el resto de webs no aparece el punto.
 
 ## Relación con el repo web
 

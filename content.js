@@ -137,6 +137,11 @@
   });
 
   async function init() {
+    try {
+      await chrome.runtime.sendMessage({ type: "TCPC_HELLO" });
+    } catch {
+      // Service worker may be waking up
+    }
     await loadPreference();
     applyState();
   }
