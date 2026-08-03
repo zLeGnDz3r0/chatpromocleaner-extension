@@ -16,12 +16,20 @@
 </p>
 
 <p align="center">
-  🌐 Sitio / assets: <a href="https://github.com/zLeGnDz3r0/chatpromocleaner">chatpromocleaner</a> (privado)<br/>
-  📦 Este repo es <strong>público</strong> — la landing enlaza aquí<br/>
-  🏪 Chrome Web Store — próximamente
+  🌐 Sitio: <a href="https://chatpromocleaner.onrender.com/">chatpromocleaner.onrender.com</a><br/>
+  🏪 <a href="https://chromewebstore.google.com/detail/twitch-chat-promo-cleaner/lddfcnbejkkpcaojffpppnhbojbepool">Chrome Web Store</a><br/>
+  📦 Este repo es <strong>público</strong> — código open source
 </p>
 
 ---
+
+## Instalación
+
+1. Abre la ficha en [Chrome Web Store](https://chromewebstore.google.com/detail/twitch-chat-promo-cleaner/lddfcnbejkkpcaojffpppnhbojbepool)
+2. Pulsa **Añadir a Chrome**
+3. Entra a Twitch: las promos encima del chat se ocultan solas
+
+Compatible con Chrome, Edge, Brave y otros navegadores Chromium.
 
 ## Qué hace
 
@@ -50,6 +58,8 @@ Twitch a menudo pone promociones encima del chat. Esta extensión las oculta aut
 ---
 
 ## Instalación (desarrollo)
+
+Si prefieres cargar el código localmente:
 
 1. Abre `chrome://extensions`
 2. Activa **Modo de desarrollador**
