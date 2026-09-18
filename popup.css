@@ -54,6 +54,12 @@ h1 {
   color: var(--muted);
 }
 
+.toggle-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .toggle-row {
   position: relative;
   display: flex;

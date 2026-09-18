@@ -6,12 +6,12 @@
 
 <p align="center">
   <strong>Chat de Twitch sin banners encima.</strong><br/>
-  Oculta channel skins, bonus de subs y promos que tapan el chat. Con toggle on/off.
+  Oculta channel skins, bonus de subs y anuncios de colaboración que tapan el chat. Dos toggles.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Chrome-MV3-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome MV3" />
-  <img src="https://img.shields.io/badge/version-1.0.1-9146FF?style=for-the-badge" alt="v1.0.1" />
+  <img src="https://img.shields.io/badge/version-1.1.0-9146FF?style=for-the-badge" alt="v1.1.0" />
   <img src="https://img.shields.io/badge/Gratis-100%25-success?style=for-the-badge" alt="Gratis" />
 </p>
 
@@ -33,7 +33,7 @@ Compatible con Chrome, Edge, Brave y otros navegadores Chromium.
 
 ## Qué hace
 
-Twitch a menudo pone promociones encima del chat. Esta extensión las oculta automáticamente y te deja un toggle en el popup para activar o desactivar la limpieza.
+Twitch a menudo pone promociones encima del chat. Esta extensión las oculta automáticamente. En el popup hay dos toggles: uno para channel skins / bonus de subs y otro para anuncios y banners de colaboración.
 
 ## Capturas
 
@@ -67,11 +67,11 @@ Si prefieres cargar el código localmente:
 
 ## Privacidad
 
-Ver [PRIVACY.md](./PRIVACY.md). Solo se guarda un booleano (toggle). Sin cuentas ni telemetría.
+Ver [PRIVACY.md](./PRIVACY.md). Solo se guardan las preferencias de los toggles. Sin cuentas ni telemetría.
 
 ## Empaquetado Chrome Web Store
 
-Usa `chatpromocleaner-extension-v1.0.1.zip` o genera uno nuevo comprimiendo el contenido de esta carpeta (con `manifest.json` en la raíz del zip).
+Usa el ZIP `chatpromocleaner-extension-v1.1.0.zip` del repo web o genera uno nuevo comprimiendo el contenido de esta carpeta (con `manifest.json` en la raíz del zip).
 
 En pestañas de Twitch, el icono muestra un punto **verde** (limpieza activa) o **rojo** (desactivada). En el resto de webs no aparece el punto.
 

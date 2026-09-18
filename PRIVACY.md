@@ -1,6 +1,6 @@
 # Política de privacidad — Chat Promo Cleaner
 
-**Última actualización:** 30 de julio de 2026
+**Última actualización:** 18 de septiembre de 2026
 
 Cuando el sitio esté publicado en Render, también estará en la ruta `/privacy`.
 
@@ -10,13 +10,13 @@ Chat Promo Cleaner (“nosotros”) es una extensión de navegador asociada a es
 
 ## 2. Finalidad
 
-Oculta banners promocionales encima del chat de Twitch (channel skins, bonus de subs, etc.) y permite activar/desactivar esa limpieza con un toggle.
+Oculta banners promocionales encima del chat de Twitch (channel skins, bonus de subs, anuncios y colaboraciones) y permite activar o desactivar cada limpieza con toggles independientes.
 
 ## 3. Datos que tratamos
 
 **No pedimos cuenta, email ni datos personales.**
 
-- **Preferencia del toggle:** booleano en `chrome.storage.sync`.
+- **Preferencias de los toggles:** booleanos en `chrome.storage.sync` (promos y anuncios/colaboraciones).
 - En Twitch solo se ocultan nodos del DOM de esas promos. No leemos el contenido de tus mensajes ni tu historial.
 
 ## 4. Qué no hacemos

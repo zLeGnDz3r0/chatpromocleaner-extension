@@ -16,19 +16,30 @@
         </div>
       </header>
 
-      <label class="toggle-row" for="toggle">
-        <div class="toggle-copy">
-          <span class="toggle-title">Eliminar promos del chat</span>
-          <span id="statusText" class="toggle-status">Activado</span>
-        </div>
-        <input id="toggle" type="checkbox" role="switch" checked />
-        <span class="switch" aria-hidden="true"></span>
-      </label>
+      <div class="toggle-stack">
+        <label class="toggle-row" for="toggle">
+          <div class="toggle-copy">
+            <span class="toggle-title">Eliminar promos del chat</span>
+            <span id="statusText" class="toggle-status">Activado</span>
+          </div>
+          <input id="toggle" type="checkbox" role="switch" checked />
+          <span class="switch" aria-hidden="true"></span>
+        </label>
+
+        <label class="toggle-row" for="adsToggle">
+          <div class="toggle-copy">
+            <span class="toggle-title">Eliminar anuncios y colaboraciones</span>
+            <span id="adsStatusText" class="toggle-status">Activado</span>
+          </div>
+          <input id="adsToggle" type="checkbox" role="switch" checked />
+          <span class="switch" aria-hidden="true"></span>
+        </label>
+      </div>
 
       <p class="hint">
-        Oculta los banners promocionales (channel skins, bonus de subs, etc.)
-        que aparecen encima del chat. Recarga la pestaña de Twitch si no ves el
-        cambio de inmediato.
+        El primer toggle oculta channel skins compartidos (bonus de subs, etc.).
+        El segundo oculta los banners de marca / “Anuncio” encima del chat,
+        da igual la colaboración. No toca encuestas ni predicciones.
       </p>
     </main>
     <script src="popup.js"></script>

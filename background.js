@@ -1,4 +1,5 @@
-const STORAGE_KEY = "promoCleanerEnabled";
+const PROMO_KEY = "promoCleanerEnabled";
+const ADS_KEY = "chatAdsCleanerEnabled";
 
 /** @type {Set<number>} */
 const twitchTabs = new Set();
@@ -35,8 +36,11 @@ function isTwitchUrl(url) {
 }
 
 async function getEnabled() {
-  const result = await chrome.storage.sync.get({ [STORAGE_KEY]: true });
-  return result[STORAGE_KEY] !== false;
+  const result = await chrome.storage.sync.get({
+    [PROMO_KEY]: true,
+    [ADS_KEY]: true,
+  });
+  return result[PROMO_KEY] !== false || result[ADS_KEY] !== false;
 }
 
 async function setTabIcon(tabId, mode) {
@@ -72,10 +76,11 @@ async function refreshAllTwitchIcons() {
 }
 
 chrome.runtime.onInstalled.addListener(async () => {
-  const current = await chrome.storage.sync.get({ [STORAGE_KEY]: true });
-  if (current[STORAGE_KEY] === undefined) {
-    await chrome.storage.sync.set({ [STORAGE_KEY]: true });
-  }
+  const current = await chrome.storage.sync.get([PROMO_KEY, ADS_KEY]);
+  const patch = {};
+  if (current[PROMO_KEY] === undefined) patch[PROMO_KEY] = true;
+  if (current[ADS_KEY] === undefined) patch[ADS_KEY] = true;
+  if (Object.keys(patch).length) await chrome.storage.sync.set(patch);
   await chrome.action.setIcon({ path: ICONS_BASE });
 });
 
@@ -118,6 +123,6 @@ chrome.tabs.onRemoved.addListener((tabId) => {
 
 chrome.storage.onChanged.addListener((changes, area) => {
   if (area !== "sync" && area !== "local") return;
-  if (!(STORAGE_KEY in changes)) return;
+  if (!(PROMO_KEY in changes) && !(ADS_KEY in changes)) return;
   refreshAllTwitchIcons();
 });
